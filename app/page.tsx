@@ -366,6 +366,177 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Playlist Section */}
+      <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-[#1DB954] via-[#1ed760] to-[#1DB954] px-4 py-20 text-center">
+        {/* Song Titles - Playfully Scattered */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0, rotate: -15 }}
+          whileInView={{ opacity: 1, scale: 1, rotate: -15 }}
+          viewport={{ once: true }}
+          className="absolute left-8 top-20 text-sm font-light text-white/30 md:text-base lg:text-lg"
+          animate={{
+            y: [0, -10, 0],
+            rotate: [-15, -20, -15],
+          }}
+          transition={{
+            opacity: { duration: 0.8, delay: 0.6 },
+            scale: { duration: 0.8, delay: 0.6 },
+            rotate: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+            y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+          }}
+        >
+          Believe me
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0, rotate: 12 }}
+          whileInView={{ opacity: 1, scale: 1, rotate: 12 }}
+          viewport={{ once: true }}
+          className="absolute right-12 top-32 text-xs font-light text-white/25 md:text-sm lg:text-base"
+          animate={{
+            y: [0, 8, 0],
+            rotate: [12, 18, 12],
+          }}
+          transition={{
+            opacity: { duration: 0.8, delay: 0.8 },
+            scale: { duration: 0.8, delay: 0.8 },
+            rotate: { duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.3 },
+            y: { duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.3 },
+          }}
+        >
+          I go nowhere
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0, rotate: -8 }}
+          whileInView={{ opacity: 1, scale: 1, rotate: -8 }}
+          viewport={{ once: true }}
+          className="absolute left-16 bottom-32 text-sm font-light text-white/30 md:text-base lg:text-lg"
+          animate={{
+            y: [0, -12, 0],
+            rotate: [-8, -15, -8],
+          }}
+          transition={{
+            opacity: { duration: 0.8, delay: 1 },
+            scale: { duration: 0.8, delay: 1 },
+            rotate: { duration: 3.8, repeat: Infinity, ease: "easeInOut", delay: 0.5 },
+            y: { duration: 3.8, repeat: Infinity, ease: "easeInOut", delay: 0.5 },
+          }}
+        >
+          Now and always
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0, rotate: 20 }}
+          whileInView={{ opacity: 1, scale: 1, rotate: 20 }}
+          viewport={{ once: true }}
+          className="absolute right-20 bottom-24 text-xs font-light text-white/25 md:text-sm lg:text-base"
+          animate={{
+            y: [0, 10, 0],
+            rotate: [20, 25, 20],
+          }}
+          transition={{
+            opacity: { duration: 0.8, delay: 1.2 },
+            scale: { duration: 0.8, delay: 1.2 },
+            rotate: { duration: 3.2, repeat: Infinity, ease: "easeInOut", delay: 0.7 },
+            y: { duration: 3.2, repeat: Infinity, ease: "easeInOut", delay: 0.7 },
+          }}
+        >
+          Smile for me
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0, rotate: -10 }}
+          whileInView={{ opacity: 1, scale: 1, rotate: -10 }}
+          viewport={{ once: true }}
+          className="absolute left-1/4 top-1/3 text-xs font-light text-white/20 md:text-sm"
+          animate={{
+            y: [0, -8, 0],
+            rotate: [-10, -15, -10],
+          }}
+          transition={{
+            opacity: { duration: 0.8, delay: 0.7 },
+            scale: { duration: 0.8, delay: 0.7 },
+            rotate: { duration: 4.2, repeat: Infinity, ease: "easeInOut", delay: 0.4 },
+            y: { duration: 4.2, repeat: Infinity, ease: "easeInOut", delay: 0.4 },
+          }}
+        >
+          Forever baby
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0, rotate: 15 }}
+          whileInView={{ opacity: 1, scale: 1, rotate: 15 }}
+          viewport={{ once: true }}
+          className="absolute right-1/4 bottom-1/3 text-xs font-light text-white/20 md:text-sm"
+          animate={{
+            y: [0, 8, 0],
+            rotate: [15, 22, 15],
+          }}
+          transition={{
+            opacity: { duration: 0.8, delay: 0.9 },
+            scale: { duration: 0.8, delay: 0.9 },
+            rotate: { duration: 3.6, repeat: Infinity, ease: "easeInOut", delay: 0.6 },
+            y: { duration: 3.6, repeat: Infinity, ease: "easeInOut", delay: 0.6 },
+          }}
+        >
+          Count on you
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0, rotate: -18 }}
+          whileInView={{ opacity: 1, scale: 1, rotate: -18 }}
+          viewport={{ once: true }}
+          className="absolute left-1/3 top-1/4 text-xs font-light text-white/25 md:text-sm lg:text-base"
+          animate={{
+            y: [0, -15, 0],
+            rotate: [-18, -25, -18],
+          }}
+          transition={{
+            opacity: { duration: 0.8, delay: 1.1 },
+            scale: { duration: 0.8, delay: 1.1 },
+            rotate: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.8 },
+            y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.8 },
+          }}
+        >
+          Perfect for you
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 50, scale: 0.9 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+          className="relative z-10 max-w-3xl space-y-8"
+        >
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            className="text-3xl font-normal text-white md:text-4xl lg:text-5xl"
+          >
+            I put together a playlist of 25 songs just for you
+          </motion.h2>
+          <motion.a
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            href="https://open.spotify.com/playlist/4YNRrIe5zpzdcKGcwKBb7e?si=S7ugCB6LR7Cj4fijJ2zHWg&pi=P1i_yV5rSWWr4"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.95 }}
+            className="mx-auto flex w-fit items-center gap-3 rounded-full border-2 border-white bg-white/10 px-8 py-4 text-lg text-white backdrop-blur-sm transition-all duration-500 hover:bg-white hover:text-[#1DB954] hover:shadow-lg"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.84-.179-.84-.66 0-.359.24-.66.54-.779 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.242 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z" />
+            </svg>
+            <span className="font-medium">Listen on Spotify</span>
+          </motion.a>
+        </motion.div>
+      </section>
+
       {/* Closing Note Section */}
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#E8DCC6] px-4 py-20 text-center">
         {/* Decorative Icons - Scattered around */}
