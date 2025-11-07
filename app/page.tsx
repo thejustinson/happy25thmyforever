@@ -291,6 +291,16 @@ export default function Home() {
           >
             You'll lay up gold as dust and your growth and profiting will bring so much glory to God. Wealth is available for you abundantly.
           </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+            className="transition-all duration-300 hover:text-gray-200"
+          >
+            In the matchless name of Jesus.
+          </motion.p>
         </motion.div>
       </section>
 
